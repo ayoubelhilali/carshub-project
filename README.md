@@ -1,4 +1,3 @@
-```markdown
 # 🚗 Carshub Project
 
 A web application for browsing and discovering cars, created by Ayoub ELHILALI, Amin Lamaizi, and Smail AIT-MHAMMED.
@@ -215,4 +214,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - 🎨 **Design inspiration**: Various online car marketplaces.
 - 📚 **Libraries used**: None (pure HTML, CSS, and JavaScript).
 - 👥 **Contributors**: Thanks to Ayoub ELHILALI, Amin Lamaizi, and Smail AIT-MHAMMED.
-```
+
