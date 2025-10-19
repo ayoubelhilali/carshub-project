@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carshub</title>
+    <title>BestCar</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="icon" type="image" href="/images/icon.png">
 </head>
 <body>
     <!----------- Header ------------>
@@ -13,21 +15,21 @@
         <nav>
             <div class="logo"></div>
             <ul>
-                <a href="">Home</a>
-                <a href="">Brands</a>
-                <a href="">news</a>
-                <a href="">contact</a>
+                <a id="home" href="">Home</a>
+                <a href="#brands">Brands</a>
+                <a href="#news">news</a>
+                <a href="#contact">contact</a>
             </ul>
             <div class="search-icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="search/search.html"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
             <div class="header-menu">
                 <button class="header-menubtn"><i class="fa-solid fa-bars"></i></button>
                 <div class="header-menu-content">
                   <a href="#"><i class="fa-solid fa-house"></i>  Home</a>
-                  <a href="#"><i class="fa-solid fa-flag"></i></i>  brands</a>
-                  <a href="#"><i class="fa-regular fa-newspaper"></i></i>  News</a>
-                  <a href="#"><i class="fa-solid fa-phone"></i>  Contact</a>
+                  <a href="#brands"><i class="fa-solid fa-flag"></i></i>  brands</a>
+                  <a href="#news"><i class="fa-regular fa-newspaper"></i></i>  News</a>
+                  <a href="#contact"><i class="fa-solid fa-phone"></i>  Contact</a>
                 </div>
               </div>
         </nav>
@@ -38,10 +40,286 @@
         <div class="text">
             <h1>LET'S FIND YOUR <br><span>PERFECT </span>CAR</h1><br>
             <h3>BEST<span>CAR </span>helps you discover <br> And shop with confiance</h3>
-            <a href="#" class="main-btn">Discover more </a>
+            <a href="#popular-cars" class="main-btn">Discover more </a>
         </div>
 
     </section>
+    <!-----popular cars slide------->
+    <section class="popular-cars" id="popular-cars">
+        <h1 class="heading">popular <span>cars</span></h1>
+        <div class="swiper slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="images/mercedes-benz/mercedes c-class nbg.png" alt="">
+                    <div class="content">
+                        <h3>mercedes-benz C-class W206</h3>
+                        <div class="price"><span>price:</span>58.000$</div>
+                        <p>
+                            <span class="fas fa-circle"></span>New
+                            <span class="fas fa-circle"></span>2021
+                            <span class="fas fa-circle"></span>250km/h
+                            <span class="fas fa-circle"></span>automatic transmission
+                            <span class="fas fa-circle"></span>Petrol / Diesel
+                        </p>
+                        <a href="https://www.mercedes-benz.com/en/vehicles/mercedes-benz/c-class/" target="_blank" class="btn">Discover more ></a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/mercedes-benz/mercedes-AMG SL.png" alt="">
+                    <div class="content">
+                        <h3>mercedes-benz-AMG SL Roadster</h3>
+                        <div class="price">
+                            <span>price:</span>150.000$
+                        </div>
+                        <p>
+                            <span class="fas fa-circle"></span>New
+                            <span class="fas fa-circle"></span>2022
+                            <span class="fas fa-circle"></span>315km/h
+                            <span class="fas fa-circle"></span>Automatic transmission
+                            <span class="fas fa-circle"></span>Petrol
+                        </p>
+                        <a href="https://www.mercedes-benz.ie/models/sl-roadster/" target="_blank" class="btn">Discover more ></a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/Honda/Honda civic type R 2024.png" alt="">
+                    <div class="content">
+                        <h3>Honda civic type R</h3>
+                        <div class="price">
+                            <span>price:</span>500$
+                        </div>
+                        <p>
+                            <span class="fas fa-circle"></span>New
+                            <span class="fas fa-circle"></span>270km/h
+                            <span class="fas fa-circle"></span>manual transmission
+                            <span class="fas fa-circle"></span>Petrol
+                        </p>
+                        <a href="https://automobiles.honda.com/civic-type-r" target="_blank" class="btn">Discover more ></a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/ford/Ford F-150.png" alt="">
+                    <div class="content">
+                        <h3>Ford F-150</h3>
+                        <div class="price">
+                            <span>price:</span>34.000$
+                        </div>
+                        <p>
+                            <span class="fas fa-circle"></span>Full-size pickup truck
+                            <span class="fas fa-circle"></span>High maximum towing and payload capacities
+                            <span class="fas fa-circle"></span>180km/h
+                            <span class="fas fa-circle"></span>Auromatic transmission
+                            <span class="fas fa-circle"></span>diesel or new hybrid-electric powertrain
+                        </p>
+                        <a href="https://www.ford.com/trucks/f150/" target="_blank" class="btn">Discover more ></a>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="images/Nissan/Nissan Altima.png" alt="">
+                    <div class="content">
+                        <h3>Nissan Altima</h3>
+                        <div class="price">
+                            <span>price:</span>28.000$
+                        </div>
+                        <p>
+                            <span class="fas fa-circle"></span>Intelligent AWD
+                            <span class="fas fa-circle"></span>Front wheel drive
+                            <span class="fas fa-circle"></span>210km/h
+                            <span class="fas fa-circle"></span>Automatic transmission
+                            <span class="fas fa-circle"></span>gas
+                        </p>
+                        <a href="https://www.nissanusa.com/vehicles/cars/altima/features.html" target="_blank" class="btn">Discover more ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!----- Cars News section ------>
+    <section id="news">
+        <h1 class="heading">Cars <span>News</span></h1>
+        <div class="news-cards" >
+            <div class="news-card">
+                <img src="images/News/2023-03-15-future-evs-641211a38d757.jpg" alt="">
+                <div class="content">
+                    <h3 class="sub-head">Future EVs: Every Electric Vehicle Coming Soon</h3>
+                    <p class="news-date">Feb 5,2024</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/News/porsche.jpg" alt="">
+                <div class="content">
+                    <h3 class="sub-head">2025 Porsche Taycan Pricing Now starts over 100.000$</h3>
+                    <p class="news-date">Feb 6,2024</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/News/clubman.jpg" alt="">
+                <div class="content">
+                    <h3 class="sub-head">Clubman Assembly Ends,but a Remplacement Is Coming</h3>
+                    <p class="news-date">Feb 7,2024</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="images/News/hamilton.jpg" alt="">
+                <div class="content">
+                    <h3 class="sub-head">Lewis Hamilton Is Officially Leaving Mercedes F1, Joining Ferrari</h3>
+                    <p class="news-date">Feb 1,2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-----Brands section ------->
+    <section class="Cars-brands" id="brands">
+        <h1 class="heading">Cars <span>brands</span></h1>
+        <div class="brand-container">
+            <div class="car-brand" onclick="showCarInfo('Mercedes')">
+                <img src="images/brands-logo/mercedes.jpeg" class="car-logo">
+                <h3 class="sub-head">Mercedes-Benz</h3>
+            </div>
+            <div class="car-brand" onclick="showCarInfo('Nissan')">
+                <img src="images/brands-logo/Nissan.jpeg" alt="Logo Marque 2" class="car-logo">
+                <h3 class="sub-head">NISSAN</h3>
+            </div>
+            <div class="car-brand" onclick="showCarInfo('Honda')">
+                <img src="images/brands-logo/honda.png" alt="Logo Marque 3" class="car-logo">
+                <h3 class="sub-head">Honda</h3>
+            </div>
+            <div class="car-brand" onclick="showCarInfo('Ford')">
+                <img src="images/brands-logo/ford.jpeg" alt="Logo Marque 4" class="car-logo">
+                <h3 class="sub-head">Ford</h3>
+            </div>
+        </div>
+        
+    </section>
+    <div class="car-info" id="MercedesInfo">
+        <p>The emblematic logo of the <span>Mercedes-Benz</span> brand is a symbol of prestige, elegance, and innovation in the automotive world. Composed of a three-pointed star surrounded by a circle, it embodies the perfect union between land, sea, and sky, highlighting the brand's global vision. The silver star represents the exceptional quality of <span>Mercedes-Benz</span> vehicles, while the circle symbolizes the brand's commitment to excellence and innovation. The logo's simple and refined aesthetics reinforce the timeless character of the brand, while also recalling its rich history and exceptional heritage. Thus, the <span>Mercedes-Benz</span> logo goes far beyond a mere visual identity; it expresses the brand's fundamental values, symbolizing luxury, performance, and a commitment to the future.
+        </p>
+        <button class="car-button" onclick="window.location.href='brands/mercedes.html'">See Mercedes's models</button>
+    </div>
+    <div class="car-info" id="NissanInfo">
+        <p>The <span>Nissan logo</span> is a symbol of the company's rich history and commitment to innovation. Its simple yet dynamic design, featuring a circle surrounding the stylized name <span>"Nissan"</span>  and a diamond-shaped motif within, evokes movement and sophistication. The colors chrome, silver, and black add a touch of modernity. Beyond aesthetics, the logo embodies <span>Nissan</span>'s values of quality and performance, reflecting its ongoing pursuit of excellence in the automotive industry since its founding in 1914 as Kaishinsha Co, later known as Datsun, and finally adopting the name <span>Nissan</span> in 1934 while still producing Datsun cars.
+        </p>
+        <button class="car-button" onclick="window.location.href='brands/nissan.html'">See Nissan's models</button>
+    </div>
+    <div class="car-info" id="HondaInfo">
+        <p>The <span>Honda</span> logo, a stylized "H," symbolizes the company's Japanese philosophy of balance and harmony. Its simplicity and symmetry reflect these values deeply ingrained in Japanese culture. The <span>"H"</span>  also resembles wings, signifying freedom and a forward-looking vision. The red color represents energy and passion for innovation. <span>Honda</span>, which began producing motorcycles in the US in 1979 and became the first Japanese brand to manufacture cars there in 1982, has evolved while maintaining its distinctive logo, showing its continuous growth in the automotive industry and beyond.
+        </p>
+        <button class="car-button" onclick="window.location.href='brands/honda.html'">See Honda's models</button>
+    </div>
+    <div class="car-info" id="FordInfo">
+        <p>The iconic logo of the <span>Ford brand</span> is a symbol of its rich history and lasting impact on the automotive industry. First adopted in 1907,<span>Ford</span> 's blue and white oval logo features the brand name in distinctive typography. Blue represents reliability and trust, while white conveys purity and safety. The oval symbolizes unity and harmony. This classic logo has evolved over the decades, but its essence remains unchanged. It embodies simplicity and timelessness, reflecting <span>Henry Ford</span>'s vision for cars accessible to all. Thus, <span>Ford</span>'s logo continues to evoke a sense of trust and loyalty among consumers worldwide, symbolizing a brand that has shaped automotive history.
+        </p>
+        <button class="car-button" onclick="window.location.href='brands/ford.html'">See Ford's models</button>
+    </div>
+ 
+    
+
+    <!------ Contact form section ------>
+    <section class="contact-us" id="contact">
+        <h1 class="heading">Contact <span> us</span></h1>
+        <div class="container">
+            <div class="content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="topic">Adress</div>
+                        <div class="text-one">Ensa AL HOCEIMA</div>
+                        <div class="text-two">Boukidan, AL HOCEIMA</div>
+                    </div>
+                    <div class="phone details">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+212 666666666</div>
+                        <div class="text-two">+212 555555555</div>
+                    </div>
+                    <div class="Email details">
+                        <i class="fas fa-envelope"></i>
+                        <div class="topic">Email</div>
+                        <div class="text-one">bestcar2024@gmail.com</div>
+                        <div class="text-two">club01@ensah.ma</div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="contact-text">Send us a message</div>
+                    <p>If you have any question or suggestions about our website, you can send us a message from here:</p>
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" placeholder="Enter your name:">
+                        </div>
+                        <div class="input-box">
+                            <input type="email" placeholder="Enter your email:">
+                        </div>
+                        <div class="input-box message-box">
+                            <textarea placeholder="Enter your message" ></textarea>
+                        </div>
+                        <div class="submit-button">
+                            <input type="button" value="Send Now">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----- Footer -------->
+    <footer>
+        <div class="row primary">
+          <div class="column about">
+            <div class="logo"></div>
+            <h3>BestCar</h3>
+            <p>
+                Explore our wide selection of quality cars,
+                ranging from classic models to the latest innovations,
+                to find the car of your dreams.
+            </p>
+          </div>
+          <div class="column links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li>
+                <a href="footer/faq.html">F.A.Q</a>
+              </li>
+              <li>
+                <a href="#cookies-policy">Cookies Policy</a>
+              </li>
+              <li>
+                <a href="#terms-of-services">Terms Of Service</a>
+              </li>
+              <li>
+                <a href="#contact">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="column subscribe">
+            <h3>Contacts</h3>
+            <div class="social">
+              <i class="fa-brands fa-facebook-square " id="facebook"></i>
+              <i class="fa-brands fa-instagram-square " id="instagram"></i>
+              <i class="fa-brands fa-twitter-square " id="twitter"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row secondary">
+          <div>
+            <p>
+              <a class="fas fa-phone-alt"></a>
+            </p>
+            <p>+212 666666666</p>
+        </div>
+          <div>
+            <p><a class="fas fa-envelope"></a></p>
+            <p>bestcar2024@gmail.com</p>
+          </div>
+          <div>
+            <p><a href="https://maps.app.goo.gl/PXiQuMo4s1JC2ieBA" class="fas fa-map-marker-alt"></a></p>
+            <p>1234 ENSAH BOUKI</p>
+          </div>
+        </div>
+        <div class="row copyright">
+          <p>Copyright &copy; 2024 01 CLUB | All Rights Reserved</p>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
