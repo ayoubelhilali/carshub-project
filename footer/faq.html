@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently asked questions</title>
+    <link rel="icon" type="image" href="/images/icon.png" />
+    <link rel="stylesheet" href="faq.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+   </head>
+   <body>
+    <!----------- Header ------------>
+    <header>
+    <nav>
+        <div class="logo"></div>
+        <ul>
+            <a href="../">Home</a>
+            <a href="../#brands">Brands</a>
+            <a href="../#news">news</a>
+            <a href="../#contact">contact</a>
+        </ul>
+        <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="header-menu">
+            <button class="header-menubtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="header-menu-content">
+                <a href="../#"><i class="fa-solid fa-house"></i>  Home</a>
+                <a href="../#brands"><i class="fa-solid fa-flag"></i></i>  brands</a>
+                <a href="../#news"><i class="fa-regular fa-newspaper"></i></i>  News</a>
+                <a href="../#contact"><i class="fa-solid fa-phone"></i>  Contact</a>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!----------   F.A.Q   -------->
+    <div class="wrapper">
+      <h1 class="heading">Frequently Asked <span>Questions</span></h1>
+
+      <div class="faq">
+        <button class="questions">
+          What is BestCar?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            BestCar is a website Explore a wide selection of quality cars,
+            ranging from classic models to the latest innovations, to find the
+            car of your dreams.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="questions">
+          What types of cars are available on your website?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our website offers a wide range of vehicles including sedans, SUVs,
+            trucks, hybrids, electric cars, and luxury vehicles. You can find
+            vehicles from various manufacturers to suit different needs and
+            preferences.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="questions">
+          How do I search for specific makes and models on your website?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            You can easily search for specific makes and models using our search
+            filters. Simply enter the make, model, year, price range, and other
+            relevant criteria to narrow down your search results and find the
+            perfect vehicle for your needs.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="questions">
+          Are your vehicles inspected and certified?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Absolutely. Each vehicle undergoes a rigorous inspection process by
+            certified technicians to ensure its quality and reliability.
+            Additionally, we offer certified pre-owned vehicles that come with
+            extended warranties for added peace of mind.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="questions">
+          How frequently is your website updated?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We strive to keep our website updated regularly with the latest information
+             on car models, pricing, and features. Our team ensures timely updates 
+             to provide our users with accurate and relevant data.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      var qst = document.getElementsByClassName("questions");
+      var i;
+
+      for (i = 0; i < qst.length; i++) {
+        qst[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

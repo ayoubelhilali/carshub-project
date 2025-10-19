@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search page</title>
+    <link rel="icon" type="image" href="../images/icon.png">
+    <link rel="stylesheet" href="search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+     <!----------- Header ------------>
+     <header>
+        <nav>
+            <div class="logo"></div>
+            <ul>
+                <a href="../">Home</a>
+                <a href="../#brands">Brands</a>
+                <a href="../#news">news</a>
+                <a href="../#contact">contact</a>
+            </ul>
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-menu">
+                <button class="header-menubtn"><i class="fa-solid fa-bars"></i></button>
+                <div class="header-menu-content">
+                  <a href="../#"><i class="fa-solid fa-house"></i>  Home</a>
+                  <a href="../#brands"><i class="fa-solid fa-flag"></i></i>  brands</a>
+                  <a href="../#news"><i class="fa-regular fa-newspaper"></i></i>  News</a>
+                  <a href="../#contact"><i class="fa-solid fa-phone"></i>  Contact</a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <div class="container-cars">
+        <div class="container">
+            <div class="search">
+                <h1>All CARS</h1>
+                <input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+            </div>
+            <div class="product-list">
+                <div class="product">
+                    <img src="../Brands/images/ford kuga.jpg">
+                    <h3>Ford Kuga</h3>
+                    <h4>$22.000 - <del>$27.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/ford puma.jpeg">
+                    <h3>Ford Puma</h3>
+                    <h4>$27.000 - <del>$39.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/ford ranger.jpeg">
+                    <h3>Ford Ranger</h3>
+                    <h4>$34.000 - <del>$45.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/ford transit custom.jpeg">
+                    <h3>Ford Transit Custom</h3>
+                    <h4>$50.000 - <del>$62.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/ford GT.jpeg">
+                    <h3>Ford GT</h3>
+                    <h4>$1.700.000 - <del>$2.000.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/honda civic.jpeg">
+                    <h3>Honda civic</h3>
+                    <h4>$24.000 - <del>$28.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/honda N600.jpeg">
+                    <h3>Honda N600</h3>
+                    <h4>$7.300 - <del>$9.100</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/honda integra.jpeg">
+                    <h3>Honda Integra</h3>
+                    <h4>$33.000 - <del>$38.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/honda cr-v.jpeg">
+                    <h3>Honda CR-V</h3>
+                    <h4>$30.000 - <del>$41.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/honda hr-v.jpeg">
+                    <h3>Honda HR-V</h3>
+                    <h4>$24.000 - <del>$34.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/mercedes 190.jpeg">
+                    <h3>Mercedes classe 190</h3>
+                    <h4>$33.000 - <del>$42.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/A class.jpeg">
+                    <h3>Mercedes classe A</h3>
+                    <h4>$33.000 - <del>$35.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/S class.jpeg">
+                    <h3>Mercedes classe S</h3>
+                    <h4>$118.000 - <del>$129.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/G-classe.jpeg">
+                    <h3>Mercedes classe G</h3>
+                    <h4>$144.00 - <del>$167.00</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/NP 300 Navara.jpg">
+                    <h3>Nissan NP300 Navara</h3>
+                    <h4>$58.000 - <del>$61.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/NV300.webp">
+                    <h3>Nissan NV300</h3>
+                    <h4>$100.00 - <del>$120.00</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/Nissan leaf.jpg">
+                    <h3>Nissan Leaf</h3>
+                    <h4>$28.000 - <del>$37.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../Brands/images/180 SX.jpeg">
+                    <h3>Nissan 180SX</h3>
+                    <h4>$12.000 - <del>$28.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../images/mercedes-benz/mercedes c-class nbg.png">
+                    <h3>Mercedes classe C</h3>
+                    <h4>$46.000 - <del>$52.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../images/mercedes-benz/mercedes-AMG SL.png">
+                    <h3>Mercedes AMG SL Roadster</h3>
+                    <h4>$111.000 - <del>$184.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../images/Nissan/Nissan Altima.png">
+                    <h3>Nissan Altima</h3>
+                    <h4>$27.000 - <del>$36.000</del></h4>
+                </div>
+                <div class="product">
+                    <img src="../images/ford/Ford F-150.png">
+                    <h3>Ford F150</h3>
+                    <h4>$34.000 - <del>$60.000</del></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript -->
+    <script type="text/javascript">
+        function search() {
+            let filter = document.getElementById('find').value.toUpperCase();
+            let item = document.querySelectorAll('.product');
+            let l = document.getElementsByTagName('h3');
+            for(var i = 0;i<=l.length;i++){
+                let a=item[i].getElementsByTagName('h3')[0];
+                let value=a.innerHTML || a.innerText || a.textContent;
+                if(value.toUpperCase().indexOf(filter) > -1) {
+                    item[i].style.display="";
+                }
+                else
+                {
+                    item[i].style.display="none";
+                }
+            }
+        }
+    </script>
+    
+</body>
+</html>
